@@ -1,0 +1,49 @@
+/*
+ * select 下拉菜单
+ */
+.divSelect{
+    cursor: pointer;
+    float: left;
+    position: relative;
+}
+.divSelect span{
+    display: block;
+    height: 31px;
+    /*min-width: 200px;*/
+    padding: 0 10px;
+    overflow: hidden;
+    line-height: 31px;
+    background: url(../images/select_left.gif) no-repeat;
+}
+.divSelect i{
+    display: block;
+    width: 31px;
+    height: 31px;
+    background: url(../images/select_right.gif) no-repeat center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+}
+.divSelect ul{
+    width: 100%;
+    background: #fff;
+    overflow: hidden;
+    position: absolute;
+    top:31px;
+    left:0;
+    z-index: 9999;
+    display: none;
+}
+.divSelect li{
+    height: 31px;
+    line-height: 31px;
+    padding: 0 10px;
+}
+.divSelect ul li:hover {
+    background: #e2e2e2;
+}
+.divSelect ul li.curr {
+    color: #fff;
+    background: #0c20e4;
+}

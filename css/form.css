@@ -1,0 +1,77 @@
+.formRadio {
+	float: left;
+	width: 16px;
+	height: 16px;
+	background: url(../images/form/radio.gif) no-repeat 0 -1px;
+	cursor: pointer;
+}
+.formRadioCurr {
+	background-position:0 -20px ;
+}
+.formCheckBox {
+	float: left;
+	width: 16px;
+	height: 16px;
+	background: url(../images/form/checkbox.gif) no-repeat 0 -1px;
+	cursor: pointer;
+}
+.formCheckBoxCurr {
+	background-position:0 -20px ;
+}
+.fromSelect {
+	float: left;
+	padding-right: 31px;
+	margin-right: 10px;
+	position: relative;
+}
+.fromSelect em {
+	display: block;
+	height: 31px;
+	line-height: 31px;
+	padding: 0 10px;
+	background: url(../images/form/select_left.gif) no-repeat;
+}
+.fromSelect i {
+	display: block;
+	width: 31px;
+	height: 31px;
+	background: url(../images/form/select_right.gif) no-repeat;
+	position: absolute;
+	top:0;
+	right: 0;
+	z-index: 1;
+}
+.fromSelect ul {
+	width: 100%;
+	background: #fff;
+	border: 1px solid #ccc;
+	position: absolute;
+	top:31px;
+	left:0;
+	z-index: 9999;
+	display: none;
+}
+.fromSelect ul li {
+	height: 32px;
+	line-height: 32px;
+	padding: 0 10px;
+	overflow: hidden;
+}
+.fromSelect ul li:hover {
+	background: #e2e2e2;
+}
+.fromSelect ul li.curr {
+	color: #fff;
+	background: #121fd5;
+}
+.hidden {
+	display: none;
+}
+
+
+
+
+
+
+
+

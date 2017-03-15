@@ -1,0 +1,143 @@
+/*
+ * @description : css reset
+ * @author   : anli(安立)
+ * @date     : 2017-02-08
+ * PC端基础样式
+ */
+.header {
+    width: 100%;
+    height: 90px;
+    background: #0096e3 url("../images/header_bg.jpg") top right no-repeat;
+    overflow: hidden;
+}
+.logo {
+    float: left;
+    width: 102px;
+    height: 28px;
+    padding: 31px 54px;
+}
+.header_txt {
+    float: left;
+    height: 42px;
+    padding: 24px 0;
+    color: #fff;
+    font-family: "黑体";
+    line-height: 21px;
+}
+.header_txt h2 {
+    font-size: 18px;
+}
+.header_txt p {
+    font-size: 12px;
+}
+.header_news {
+    float: right;
+    height: 90px;
+}
+.header_news a {
+    float: left;
+    line-height: 90px;
+    color: #fff;
+    font-family: "微软雅黑";
+    font-size: 14px;
+    padding-right: 45px;
+}
+.whole {
+    width: 100%;
+    margin: 0 auto;
+    /*overflow: hidden;*/
+    position: absolute;
+    left: 0;
+    top: 90px;
+    bottom: 0;
+    right: 0;
+}
+.whole_title {
+    width: 209px;
+    overflow-y: auto;
+    /*overflow-x: hidden;*/
+    border: 1px solid #dddee1;
+    background: #f3fafe;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
+}
+.whole_title dt {
+    width: 100%;
+    line-height: 16px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px 20px 20px 32px;
+    cursor: pointer;
+}
+.whole_title dt.curr {
+    background: #e3ecf1;
+    border-bottom: 1px solid #2798e3;
+}
+.whole_title dt em {
+    float: left;
+    width: 16px;
+    height: 16px;
+    background: url("../images/pic.png") no-repeat;
+}
+.whole_title dt em.sample {
+    background-position: -24px -45px;
+}
+.whole_title dt em.experiment {
+    background-position: -56px -45px;
+}
+.whole_title dt em.presentation {
+    background-position: -90px -46px;
+}
+.whole_title dt em.system {
+    background-position: -127px -47px;
+}
+.whole_title dt em.sample_curr {
+    background-position: -24px -17px;
+}
+.whole_title dt em.experiment_curr {
+    background-position: -56px -17px;
+}
+.whole_title dt em.presentation_curr {
+    background-position: -89px -18px;
+}
+.whole_title dt em.system_curr {
+    background-position: -127px -17px;
+}
+.whole_title dt a {
+    float: left;
+    font-family: "黑体";
+    font-size: 16px;
+    color: #666;
+    padding-left: 20px;
+}
+.whole_title dt i {
+    float: right;
+    width: 16px;
+    height: 16px;
+    background: url("../images/pic.png") no-repeat;
+    background-position: -166px -48px;
+}
+.whole_title dt i.curr {
+    background-position: -166px -19px;
+}
+.whole_title dd {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 20px 0 32px;
+    display: none;
+}
+.whole_title dd a {
+    display: block;
+    line-height: 36px;
+    font-family: "黑体";
+    font-size: 12px;
+    color: #666;
+    padding-left: 36px;
+}
+.whole_title dd a.curr {
+    color: #299be4;
+}
+

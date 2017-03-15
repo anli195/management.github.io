@@ -1,0 +1,130 @@
+<div class="content_information">
+	<!-- 页面主体头部_content_title_@start-->
+	<div class="content_title">
+		<div class="current_location">
+			<em></em>
+			<span>当前位置：</span>
+			<i>样品中心 > 样品信息</i>
+		</div>
+		<div class="data" id="data">
+			<dfn></dfn>
+			<em></em>
+			<span></span>
+			<i></i>
+		</div>
+	</div>
+	<!-- 页面主体头部_content_title_@end-->
+	<!-- 页面主体内容_content_txt_@start-->
+	<div class="content_txt" contenteditable=false>
+		<!-- 搜索_query_@start-->
+		<div class="query">
+			<span>样品编号</span>
+			<input type="text" id="sampleNum">
+			<span>被检者姓名</span>
+			<input type="text" id="sampleName">
+			<a class="search" id="search" contenteditable=false></a>
+			<em id="screen" title="全屏" contenteditable=false></em>
+		</div>
+		<!-- 搜索_query_@end-->
+		<!-- 表格_table_@start-->
+		<div class="table">
+			<table>
+				<thead>
+					<tr>
+						<th>
+							<input type="checkbox" id="check">
+							<label for="check">全选</label>
+						</th>
+						<th>样品编号</th>
+						<th>被检者姓名</th>
+						<th>样品类型</th>
+						<th>收样日期</th>
+						<th>是否已建库</th>
+						<th>操作</th>
+					</tr>
+				</thead>
+				<tbody></tbody>
+			</table>
+		</div>
+		
+		<!-- 表格_table_@end-->
+	</div>
+	<!-- 表格主体内容_content_txt_@end-->
+	<div class="control">
+		<input type="button" value="添加样品信息" id="addInformation" />
+		<input type="button" value="删除样品信息" id="delInformation" />
+		<input type="button" value="批量导入" />
+		<div class="control_txt">
+			<span id="homePage">首页</span>
+			<span id="prev">上一页</span>
+			<span>共50页，当前第
+                <em>1</em>
+        	页</span>
+			<span>显示条数
+            	<em>10</em>
+        	</span>
+			<span id="next">下一页</span>
+			<span id="shadowe">尾页</span>
+		</div>
+	</div>
+</div>
+<!-- 页面主体添加页面_content_@start-->
+<div class="content_add">
+	<p class="essential">样品基本信息</p>
+	<p>
+		<label>
+			<span>样品编号</span>
+			<input type="text" id="sampleNumber">
+		</label>
+		<label>
+			<span>样品类型</span>
+			<select id="sampleType">
+				<option>阴性</option>
+				<option>阳性</option>
+			</select>
+		</label>
+		<label>
+			<span>样品运输情况</span>
+			<input type="text" id="sampleTransport">
+		</label>
+	</p>
+	<p>
+		<label>
+			<span>采集日期</span>
+			<dfn id="sampleCollection" contenteditable=false class="laydate-icon" onClick="laydate({istime: false, format: 'YYYY年MM月DD日'})">请选择日期</dfn>
+		</label>
+		<label>
+			<span>收样日期</span>
+			<dfn id="sampleDate" contenteditable=false class="laydate-icon" onClick="laydate({istime: false, format: 'YYYY年MM月DD日'})">请选择日期</dfn>
+		</label>
+		<label>
+			<span>样品质量</span>
+			<select id="sampleQuality">
+				<option>优秀</option>
+				<option>中性</option>
+				<option>良好</option>
+			</select>
+		</label>
+	</p>
+	<p>
+		<label>
+			<span>用户ID</span>
+			<input type="text" id="sampleId">
+		</label>
+		<label>
+			<span>用户姓名</span>
+			<input type="text" id="sampleUser">
+		</label>
+	</p>
+	<div class="prompt">
+		<span></span>
+	</div>
+	<div class="add_btn" id="addBtn">
+		<a href="javascript:void(0)" class="determine">确定</a>
+		<a href="javascript:void(0)" class="cancel">取消</a>
+	</div>
+</div>
+<!-- 页面主体添加页面_content_@end-->
+
+
+<script src="../js/sample.js" type="text/javascript"></script>
